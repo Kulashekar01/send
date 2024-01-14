@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            sending data from a webpage to database
+        </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            h2 {
+                text-align: center;
+                padding: 20px;
+
+            }
+           
+            form {
+                max-width: 400px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Student Registation Form</h2>
+        <form action="submit.php" method="post">
+            <label for="roll no">Roll No:</label>
+            <input type="number" name="roll no" required min="1"><br>
+            <label for="student name">Student Name:</label>
+            <input type="text" name="student name" required><br>
+            <label for="course">Course:</label>
+            <input type="text" name="course" required><br>
+            <label for="year">Year:</label>
+            <input type="text" name="year" required><br>
+            <label for="section">Section:</label>
+            <input type="text" name="section" required><br>
+            <label for="mobile number">Mobile number:</label>
+            <input type="number" name="mobile number" required min="1"><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
